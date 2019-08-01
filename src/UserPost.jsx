@@ -1,12 +1,11 @@
 import React from 'react';
 
-const UserPost = () => {
-
+const UserPost = (props) => {
     return(
         <div className="userPost">
-            <h3>User ID: 3</h3>
-            <h4>Title: amazing title here</h4>
-            <p>this is a post this is a post this is a post this is a post</p>
+            <h3>User ID: {props.post.userId}</h3>
+            <h4>Title: {props.post.title}</h4>
+            <p>{props.post.body}</p>
         </div>
     )
 }
